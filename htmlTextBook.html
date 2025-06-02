@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced Information Technology</title>
+</head>
+<body>
+<h3><em>ADVANCED DATABASE CONCEPTS</em></h3>
+<h3 style="background-color:grey;">1.2 Writing Advanced Queries</h3>
+<p>Access has the capabitility to handle far advanced queries than the simple<br>criteria based queries</p>
+<h5>1.2.1 Creating Sub-Queries</h5>
+<p>A sub-query is a query nested inside another query.We can use Sub-queries <br>within select query,action query or within another sub-queries.
+<br>Fig 1.2.1 shows the example of a sub-query in a Select statement.
+
+<p style="border:2px Solid black;padding:10px;display:inline-block;">
+
+SELECT * from Products
+<br>
+WHERE ProductID IN<br>
+(SELECT ProductID FROM OrderDetails WHERE Discount>=.25);</p>
+
+
+<p style="text-align:center;"><i>Fig 1.2.1 Subquery Example</i></p>
+
+<p>Points to be noted while writing a sub-query</p>
+<ul>
+<li>The sub-query must be written in SQL statement.</li>
+<li>The sub-query is always written in brackets().</li>
+</ul>
+
+</body>
+</html>
+
