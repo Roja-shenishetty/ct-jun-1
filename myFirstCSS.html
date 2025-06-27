@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>myCSS</title>
+        <!--Internal Css-->
+        <style>
+            body{
+                background-color: beige;
+                /*my doubt*/
+                background-image: url("bgdesert.jpg");
+                background-repeat:repeat;
+            }
+           
+            h1,h2{
+                text-align: right;
+                background-color:red; 
+                /*comment inside internal CSS style*/
+            }
+        </style>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+
+
+        <h2>This is Internal CSS</h2>
+        <h1>MY Style Sheet this is also internal css</h1>
+        <!--this is h1 with class selector-->
+        <h1 class="headerclass">This is h1. class selector</h1>
+        
+        <!--inline CSS-->
+        <p style="color: blueviolet;">This is Inline CSS</p>
+        
+        <!--External css-->
+        <p>This is External CSS</p>
+        
+        
+        <!--ID Selector-->
+        <p id="unique">This is id selector</p>
+        <h3 class="firstClass">This is class selector</h3>
+        
+        
+        <!--background attribute-->
+        <div class="backGroundProperty">This is Background shorthand</div>
+
+
+        <!--border attribute-->
+        <p class="borderProperty">This is my border with border property</p>
+        <!--This will inherit the properties of p element and borderProperty class selector-->
+
+        
+        <!--left border attribute-->
+        <p id="leftBorder">This is using border-left attribute</p>
+
+        
+        <!--margin attribute-->
+        <p id="myMargin">This is my margin attribute with id selector</p>
+
+        
+        <!--all border attributes-->
+        <p id="allBorders">This is all borders with colors</p>
+
+
+        <!--padding attribute-->
+        <p class="myPadding">This is with different padding values</p>    
+    
+
+        <!--outline attribute-->
+        <p class="myOutline">This is with content outline,border,margin and padding</p>
+    </body>
+
+</html>
