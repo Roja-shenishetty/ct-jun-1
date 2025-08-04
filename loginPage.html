@@ -1,18 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>MyLoginPage</title>
-    </head>
-    <body>
-        <form>
-            <label>UserName:</label>
-            <input type="text"/><br>
-            <br>
-            <label>Password:</label>
-            <input type="password"/><br><br>
-            <button type="reset">Reset</button><br><br>
-            <button type="submit">Login</button><br>
-            <a href="rojathathe@gmail.com">Forgot Password</a>
-        </form>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginPage</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .parent {
+        width: 50vw;
+        border: 50px solid black;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+      }
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        font-family: Arial, sans-serif;
+      }
+      legend {
+        font-size: 2rem;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      input {
+        padding: 0.2rem 1rem;
+        margin: 0.5rem;
+        width: 80%;
+      }
+      .container {
+        border: none;
+        display: inline-block;
+        position: relative;
+
+        font-size: 0.8rem;
+      }
+      #myCheckbox {
+        position: absolute;
+        float: left;
+        left: -5rem;
+      }
+
+      a {
+        position: absolute;
+        right: -3rem;
+        text-decoration: none;
+        color: black;
+      }
+
+      button {
+        background-color: #8845ba;
+        width: 80%;
+        height: auto;
+        padding: 0.5rem;
+        margin: 1rem;
+        text-transform: uppercase;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+      }
+      button:hover {
+        background-color: #840ff0;
+      }
+      input:hover {
+        transform: translateY(1px);
+        border: 1px dotted #840ff0;
+      }
+      @media (max-width: 768px) {
+        .parent {
+          width: 50vw;
+          border: 20px solid black;
+          height: 50vh;
+        }
+        input {
+          width: 60%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <fieldset>
+        <legend>Login</legend>
+
+        <input placeholder="Username" type="text" />
+        <input placeholder="Password" type="password" />
+        <div class="container">
+          <input type="checkbox" id="myCheckbox" />
+          <label for="Remember">RememberMe</label>
+          <a href="#" alt="forgot password">Forgot?</a>
+        </div>
+        <button>Login</button>
+      </fieldset>
+    </div>
+  </body>
 </html>
